@@ -1,0 +1,82 @@
+//
+//  GameBrain.swift
+//  BullMaster
+//
+//  Created by 马学渊 on 15/9/22.
+//  Copyright © 2015年 马学渊. All rights reserved.
+//
+
+import Foundation
+
+class GameBrain {
+	var score = 0
+	var round = 0
+	var marksArray : [String]
+	
+	init(){
+		marksArray=[String]()
+		for _ in 0 ... 23 {
+			marksArray.append("⚫️")
+		}
+	}
+	
+	func generateMarksString() -> String {
+		var marksString=""
+		for i in 0 ... 23 {
+			marksString += marksArray[i]
+			if i==5 || i==11 || i==17 {
+				marksString += "\n"
+			}
+		}
+		return marksString
+	}
+	
+	func addScore(scoreToAdd : Int){
+		if round > 23 {
+			return
+		}
+		
+		score += scoreToAdd
+		switch scoreToAdd {
+		case 50 :
+			marksArray[round] = "🔴"
+		case 25 :
+			marksArray[round] = "🔵"
+		case 0  :
+			marksArray[round] = "⚪️"
+		default :
+			break
+		}
+		round += 1
+	}
+	
+	func undo(){
+		if round <= 0 {
+			return
+		}
+		
+		round -= 1
+		let currentMark = marksArray[round]
+		switch currentMark {
+		case "🔴" :
+			score -= 50
+		case "🔵" :
+			score -= 25
+		default :
+			break
+		}
+		marksArray[round] = "⚫️"
+	}
+	
+	func restart(){
+		if round <= 0 {
+			return
+		}
+		
+		round = 0
+		score = 0
+		for i in 0 ... 23 {
+			marksArray[i] = "⚫️"
+		}
+	}
+}

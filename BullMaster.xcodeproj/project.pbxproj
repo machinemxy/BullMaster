@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2220198E1BB0F2A200B4F829 /* GameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2220198D1BB0F2A200B4F829 /* GameBrain.swift */; settings = {ASSET_TAGS = (); }; };
 		3EE7CC971BB02475001F65B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7CC961BB02475001F65B3 /* AppDelegate.swift */; };
 		3EE7CC9C1BB02475001F65B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE7CC9A1BB02475001F65B3 /* Main.storyboard */; };
 		3EE7CC9E1BB02475001F65B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE7CC9D1BB02475001F65B3 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2220198D1BB0F2A200B4F829 /* GameBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBrain.swift; sourceTree = "<group>"; };
 		3EE7CC931BB02475001F65B3 /* BullMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE7CC961BB02475001F65B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EE7CC9B1BB02475001F65B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				3EE7CC961BB02475001F65B3 /* AppDelegate.swift */,
 				3EE7CC9A1BB02475001F65B3 /* Main.storyboard */,
+				2220198D1BB0F2A200B4F829 /* GameBrain.swift */,
 				3EE7CCAA1BB039F1001F65B3 /* GameViewController.swift */,
 				3EE7CCA81BB02541001F65B3 /* MenuViewController.swift */,
 				3EE7CC9D1BB02475001F65B3 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2220198E1BB0F2A200B4F829 /* GameBrain.swift in Sources */,
 				3EE7CC971BB02475001F65B3 /* AppDelegate.swift in Sources */,
 				3EE7CCAB1BB039F1001F65B3 /* GameViewController.swift in Sources */,
 				3EE7CCA91BB02541001F65B3 /* MenuViewController.swift in Sources */,
@@ -289,6 +293,7 @@
 				3EE7CCA71BB02475001F65B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
