@@ -8,12 +8,12 @@
 
 import Foundation
 
-class GameBrain {
+class GameBrain : NSObject, NSCoding {
 	var score = 0
 	var round = 0
 	var marksArray : [String]
 	
-	init(){
+	override init(){
 		marksArray=[String]()
 		for _ in 0 ... 23 {
 			marksArray.append("⚫️")
@@ -78,5 +78,18 @@ class GameBrain {
 		for i in 0 ... 23 {
 			marksArray[i] = "⚫️"
 		}
+	}
+	
+	//数据存储
+	func encodeWithCoder(aCoder: NSCoder) {
+		aCoder.encodeObject(score, forKey: "score")
+		aCoder.encodeObject(round, forKey: "round")
+		aCoder.encodeObject(marksArray, forKey: "marksArray")
+	}
+	
+	required init?(coder aDecoder: NSCoder) {
+		score = aDecoder.decodeObjectForKey("score") as! Int
+		round = aDecoder.decodeObjectForKey("round") as! Int
+		marksArray = aDecoder.decodeObjectForKey("marksArray") as! [String]
 	}
 }

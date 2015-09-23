@@ -11,13 +11,23 @@ import UIKit
 class GameViewController: UIViewController {
 
 	var gameBrain = GameBrain()
-	
+	let filePath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentationDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] + "gameBrain.dat"
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-        // Do any additional setup after loading the view.
+		//读取进展到途中的游戏
+		if let tempGameBrain : GameBrain = NSKeyedUnarchiver.unarchiveObjectWithFile(filePath) as? GameBrain{
+			gameBrain = tempGameBrain
+		}
+		
+        // 更新Labels
 		refreshLabels()
     }
+	
+	override func viewWillDisappear(animated: Bool) {
+		super.viewWillDisappear(animated)
+		NSKeyedArchiver.archiveRootObject(gameBrain, toFile: filePath)
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
