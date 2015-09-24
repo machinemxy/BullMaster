@@ -42,10 +42,8 @@ class GameBrain : NSObject, NSCoding {
 			marksArray[round] = "🔴"
 		case 25 :
 			marksArray[round] = "🔵"
-		case 0  :
-			marksArray[round] = "⚪️"
 		default :
-			break
+			marksArray[round] = "⚪️"
 		}
 		round += 1
 	}
@@ -78,6 +76,28 @@ class GameBrain : NSObject, NSCoding {
 		for i in 0 ... 23 {
 			marksArray[i] = "⚫️"
 		}
+	}
+	
+	func save(){
+		//保存一条RecordRow
+		let newRecordRow = RecordRow()
+		for i in 0 ... 23 {
+			switch marksArray[i] {
+			case "🔴" :
+				newRecordRow.dBull += 1
+			case "🔵" :
+				newRecordRow.sBull += 1
+			default :
+				break
+			}
+		}
+		newRecordRow.score = self.score
+		
+		//保存RecordTable
+		RecordTable.staticRecordTabel.dBullCount += newRecordRow.dBull
+		RecordTable.staticRecordTabel.sBullCount += newRecordRow.sBull
+		RecordTable.staticRecordTabel.gamePlayed += 1
+		RecordTable.staticRecordTabel.recordList.append(newRecordRow)
 	}
 	
 	//数据存储

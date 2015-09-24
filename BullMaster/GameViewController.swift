@@ -11,7 +11,7 @@ import UIKit
 class GameViewController: UIViewController {
 
 	var gameBrain = GameBrain()
-	let filePath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentationDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] + "gameBrain.dat"
+	private let filePath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] + "gameBrain.dat"
     override func viewDidLoad() {
         super.viewDidLoad()
 		
@@ -74,11 +74,18 @@ class GameViewController: UIViewController {
 	}
 	
 	private func checkWetherTheGameIsEnded(){
-		if gameBrain.round > 23 {
-			let alertController = UIAlertController(title: "Game Set", message: "You got \(gameBrain.score)", preferredStyle: .Alert)
-			alertController.addAction(UIAlertAction(title: "Confirm", style: .Default, handler: nil))
-			self.presentViewController(alertController, animated: true, completion: nil)
+		if gameBrain.round <= 23 {
+			return
 		}
+		
+		//保存RecordTable
+		gameBrain.save()
+		
+		//跳出提示框
+		let alertController = UIAlertController(title: "Game Set", message: "You got \(gameBrain.score)", preferredStyle: .Alert)
+		alertController.addAction(UIAlertAction(title: "Confirm", style: .Default, handler: nil))
+		self.presentViewController(alertController, animated: true, completion: nil)
+
 	}
 
     /*
