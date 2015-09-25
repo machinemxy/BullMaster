@@ -66,6 +66,7 @@ class RecordTable : NSObject, NSCoding{
 		}
 	}
 	
+	//压缩存储
 	func encodeWithCoder(aCoder: NSCoder) {
 		aCoder.encodeObject(dBullCount, forKey: "dBullCount")
 		aCoder.encodeObject(sBullCount, forKey: "sBullCount")
@@ -78,5 +79,10 @@ class RecordTable : NSObject, NSCoding{
 		sBullCount = aDecoder.decodeObjectForKey("sBullCount") as! Int
 		gamePlayed = aDecoder.decodeObjectForKey("gamePlayed") as! Int
 		recordList = aDecoder.decodeObjectForKey("recordList") as! [RecordRow]
+	}
+	
+	static func saveSelf(){
+		let filePath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] + "recordTable.dat"
+		NSKeyedArchiver.archiveRootObject(staticRecordTabel, toFile: filePath)
 	}
 }

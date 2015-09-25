@@ -98,6 +98,7 @@ class GameBrain : NSObject, NSCoding {
 		RecordTable.staticRecordTabel.sBullCount += newRecordRow.sBull
 		RecordTable.staticRecordTabel.gamePlayed += 1
 		RecordTable.staticRecordTabel.recordList.append(newRecordRow)
+		RecordTable.saveSelf()
 	}
 	
 	//数据存储
