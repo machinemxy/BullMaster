@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="88" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V8Q-wV-Tgl" id="wmr-wQ-Ae2">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOf-CK-ucM">
@@ -402,7 +402,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="esi-B1-9hw">
                                 <rect key="frame" x="0.0" y="28" width="600" height="572"/>
-                                <mutableString key="text">Tutorial
+                                <string key="text">Tutorial
 
 You are required to throw 24 times per game (three darts per round, eight rounds in all). If you hit the center of the darts board, it is called a D-Bull, you'll get 50 points. When you hit the ring surrounding the center, it is a S-Bull, 25 points would be added to your score. Other place won't give you any score. When you finish 24 darts, a total score will be shown and the game data will be saved into your record. You can press "Restart" to begin a new game.
 
@@ -410,7 +410,7 @@ Feedback
 
 Email: cecil_ma@sina.com
 Weibo: Cecil_Ma
-Twitter: cma19891103</mutableString>
+Twitter: cma19891103</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -478,7 +478,7 @@ Twitter: cma19891103</mutableString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7r-LS-9Sc">
-                                <rect key="frame" x="209.5" y="440" width="181.5" height="50"/>
+                                <rect key="frame" x="209" y="440" width="182" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="vCQ-Zu-0yQ"/>
                                 </constraints>
@@ -504,7 +504,7 @@ Twitter: cma19891103</mutableString>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJ3-y3-mh9">
-                                <rect key="frame" x="20" y="520" width="181.5" height="50"/>
+                                <rect key="frame" x="20" y="520" width="181" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="uKe-Qq-4pE"/>
                                 </constraints>
@@ -515,7 +515,7 @@ Twitter: cma19891103</mutableString>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53v-eP-cYt">
-                                <rect key="frame" x="209.5" y="520" width="181.5" height="50"/>
+                                <rect key="frame" x="209" y="520" width="182" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="OD3-xy-TvX"/>
                                 </constraints>
@@ -526,7 +526,7 @@ Twitter: cma19891103</mutableString>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLe-k8-5lJ">
-                                <rect key="frame" x="398.5" y="520" width="181.5" height="50"/>
+                                <rect key="frame" x="399" y="520" width="181" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="zBU-Np-GbE"/>
                                 </constraints>

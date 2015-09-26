@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2220198E1BB0F2A200B4F829 /* GameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2220198D1BB0F2A200B4F829 /* GameBrain.swift */; settings = {ASSET_TAGS = (); }; };
 		22942E061BB38A4400163C31 /* RecordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22942E051BB38A4400163C31 /* RecordRow.swift */; settings = {ASSET_TAGS = (); }; };
-		22942E0A1BB3CFFA00163C31 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22942E091BB3CFFA00163C31 /* SummaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		22B71EDC1BB4F0C600153856 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B71EDB1BB4F0C600153856 /* HistoryTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		22FCC61A1BB29C3E00751DB4 /* RecordTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FCC6191BB29C3E00751DB4 /* RecordTable.swift */; settings = {ASSET_TAGS = (); }; };
 		3EE7CC971BB02475001F65B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7CC961BB02475001F65B3 /* AppDelegate.swift */; };
 		3EE7CC9C1BB02475001F65B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE7CC9A1BB02475001F65B3 /* Main.storyboard */; };
@@ -18,13 +16,13 @@
 		3EE7CCA11BB02475001F65B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE7CC9F1BB02475001F65B3 /* LaunchScreen.storyboard */; };
 		3EE7CCA91BB02541001F65B3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7CCA81BB02541001F65B3 /* MenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3EE7CCAB1BB039F1001F65B3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7CCAA1BB039F1001F65B3 /* GameViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3EE80CA31BB6373B006A9C3E /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE80CA21BB6373B006A9C3E /* HistoryTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3EE80CA71BB63832006A9C3E /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE80CA61BB63832006A9C3E /* SummaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2220198D1BB0F2A200B4F829 /* GameBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBrain.swift; sourceTree = "<group>"; };
 		22942E051BB38A4400163C31 /* RecordRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordRow.swift; sourceTree = "<group>"; };
-		22942E091BB3CFFA00163C31 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SummaryViewController.swift; path = ../SummaryViewController.swift; sourceTree = "<group>"; };
-		22B71EDB1BB4F0C600153856 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryTableViewController.swift; path = ../HistoryTableViewController.swift; sourceTree = "<group>"; };
 		22FCC6191BB29C3E00751DB4 /* RecordTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTable.swift; sourceTree = "<group>"; };
 		3EE7CC931BB02475001F65B3 /* BullMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE7CC961BB02475001F65B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +32,8 @@
 		3EE7CCA21BB02475001F65B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EE7CCA81BB02541001F65B3 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3EE7CCAA1BB039F1001F65B3 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3EE80CA21BB6373B006A9C3E /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		3EE80CA61BB63832006A9C3E /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +72,9 @@
 				22FCC6191BB29C3E00751DB4 /* RecordTable.swift */,
 				22942E051BB38A4400163C31 /* RecordRow.swift */,
 				3EE7CCAA1BB039F1001F65B3 /* GameViewController.swift */,
-				22942E091BB3CFFA00163C31 /* SummaryViewController.swift */,
 				3EE7CCA81BB02541001F65B3 /* MenuViewController.swift */,
-				22B71EDB1BB4F0C600153856 /* HistoryTableViewController.swift */,
+				3EE80CA61BB63832006A9C3E /* SummaryViewController.swift */,
+				3EE80CA21BB6373B006A9C3E /* HistoryTableViewController.swift */,
 				3EE7CC9D1BB02475001F65B3 /* Assets.xcassets */,
 				3EE7CC9F1BB02475001F65B3 /* LaunchScreen.storyboard */,
 				3EE7CCA21BB02475001F65B3 /* Info.plist */,
@@ -152,13 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B71EDC1BB4F0C600153856 /* HistoryTableViewController.swift in Sources */,
+				3EE80CA31BB6373B006A9C3E /* HistoryTableViewController.swift in Sources */,
 				2220198E1BB0F2A200B4F829 /* GameBrain.swift in Sources */,
 				22FCC61A1BB29C3E00751DB4 /* RecordTable.swift in Sources */,
+				3EE80CA71BB63832006A9C3E /* SummaryViewController.swift in Sources */,
 				3EE7CC971BB02475001F65B3 /* AppDelegate.swift in Sources */,
 				3EE7CCAB1BB039F1001F65B3 /* GameViewController.swift in Sources */,
 				3EE7CCA91BB02541001F65B3 /* MenuViewController.swift in Sources */,
-				22942E0A1BB3CFFA00163C31 /* SummaryViewController.swift in Sources */,
 				22942E061BB38A4400163C31 /* RecordRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

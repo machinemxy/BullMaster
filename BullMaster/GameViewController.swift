@@ -84,6 +84,10 @@ class GameViewController: UIViewController {
 		//跳出提示框
 		let alertController = UIAlertController(title: "Game Set", message: "You got \(gameBrain.score)", preferredStyle: .Alert)
 		alertController.addAction(UIAlertAction(title: "Confirm", style: .Default, handler: nil))
+		alertController.addAction(UIAlertAction(title: "Restart", style: .Default, handler: { (UIAlertAction) -> Void in
+			self.gameBrain.restart()
+			self.refreshLabels()
+		}))
 		self.presentViewController(alertController, animated: true, completion: nil)
 
 	}
