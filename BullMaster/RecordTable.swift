@@ -19,6 +19,8 @@ class RecordTable : NSObject, NSCoding{
 	var dBullCount = 0
 	var sBullCount = 0
 	var gamePlayed = 0
+	var sumScore = 0
+	var maxScore = 0
 	var recordList = [RecordRow]()
 	
 	var bullCount : Int {
@@ -66,11 +68,36 @@ class RecordTable : NSObject, NSCoding{
 		}
 	}
 	
+	var avgScore : Int {
+		get {
+			if gamePlayed == 0 {
+				return 0
+			} else {
+				return sumScore / gamePlayed
+			}
+		}
+	}
+	
+	//处理maxScore
+	func updateMaxScoreForInsert(newScore: Int){
+		maxScore = max(maxScore,newScore)
+	}
+	
+	func updateMaxScoreForDelete() {
+		var newMaxScore = 0
+		for recordRow in recordList {
+			newMaxScore = max(newMaxScore,recordRow.score)
+		}
+		maxScore = newMaxScore
+	}
+	
 	//压缩存储
 	func encodeWithCoder(aCoder: NSCoder) {
 		aCoder.encodeObject(dBullCount, forKey: "dBullCount")
 		aCoder.encodeObject(sBullCount, forKey: "sBullCount")
 		aCoder.encodeObject(gamePlayed, forKey: "gamePlayed")
+		aCoder.encodeObject(sumScore, forKey: "sumScore")
+		aCoder.encodeObject(maxScore, forKey: "maxScore")
 		aCoder.encodeObject(recordList, forKey: "recordList")
 	}
 	
@@ -78,6 +105,8 @@ class RecordTable : NSObject, NSCoding{
 		dBullCount = aDecoder.decodeObjectForKey("dBullCount") as! Int
 		sBullCount = aDecoder.decodeObjectForKey("sBullCount") as! Int
 		gamePlayed = aDecoder.decodeObjectForKey("gamePlayed") as! Int
+		sumScore = aDecoder.decodeObjectForKey("sumScore") as! Int
+		maxScore = aDecoder.decodeObjectForKey("maxScore") as! Int
 		recordList = aDecoder.decodeObjectForKey("recordList") as! [RecordRow]
 	}
 	

@@ -10,6 +10,8 @@ import UIKit
 
 class SummaryViewController: UIViewController {
 	//一些控件
+	@IBOutlet weak var maxScoreLabel: UILabel!
+	@IBOutlet weak var avgScoreLabel: UILabel!
 	@IBOutlet weak var bullCountLabel: UILabel!
 	@IBOutlet weak var bullRateLabel: UILabel!
 	@IBOutlet weak var dBullCountLabel: UILabel!
@@ -23,6 +25,8 @@ class SummaryViewController: UIViewController {
 		super.viewDidLoad()
 		
 		//设置控件显示
+		maxScoreLabel.text = String(RecordTable.staticRecordTabel.maxScore)
+		avgScoreLabel.text = String(RecordTable.staticRecordTabel.avgScore)
 		bullCountLabel.text = String(RecordTable.staticRecordTabel.bullCount)
 		bullRateLabel.text  = RecordTable.staticRecordTabel.bullRate + "%"
 		dBullCountLabel.text = String(RecordTable.staticRecordTabel.dBullCount)

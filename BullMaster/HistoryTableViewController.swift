@@ -78,9 +78,12 @@ class HistoryTableViewController: UITableViewController {
 			let currentRecordRow = RecordTable.staticRecordTabel.recordList[indexPath.row]
 			RecordTable.staticRecordTabel.dBullCount -= currentRecordRow.dBull
 			RecordTable.staticRecordTabel.sBullCount -= currentRecordRow.sBull
+			RecordTable.staticRecordTabel.sumScore -= currentRecordRow.score
 			RecordTable.staticRecordTabel.gamePlayed -= 1
 			//删去数据
 			RecordTable.staticRecordTabel.recordList.removeAtIndex(indexPath.row)
+			//重新取maxScore
+			RecordTable.staticRecordTabel.updateMaxScoreForDelete()
 			//保存
 			RecordTable.saveSelf()
 			//画面删除
