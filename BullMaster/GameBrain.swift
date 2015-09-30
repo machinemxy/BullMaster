@@ -99,7 +99,7 @@ class GameBrain : NSObject, NSCoding {
 		RecordTable.staticRecordTabel.gamePlayed += 1
 		RecordTable.staticRecordTabel.sumScore += self.score
 		RecordTable.staticRecordTabel.updateMaxScoreForInsert(self.score)
-		RecordTable.staticRecordTabel.recordList.append(newRecordRow)
+		RecordTable.staticRecordTabel.recordList.insert(newRecordRow, atIndex: 0)
 		RecordTable.saveSelf()
 	}
 	
