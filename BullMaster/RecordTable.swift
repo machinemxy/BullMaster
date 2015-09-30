@@ -111,7 +111,7 @@ class RecordTable : NSObject, NSCoding{
 	}
 	
 	static func saveSelf(){
-		let filePath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] + "recordTable.dat"
+		let filePath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] + "/recordTable.dat"
 		NSKeyedArchiver.archiveRootObject(staticRecordTabel, toFile: filePath)
 	}
 }

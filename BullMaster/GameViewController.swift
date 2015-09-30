@@ -11,7 +11,8 @@ import UIKit
 class GameViewController: UIViewController {
 
 	var gameBrain = GameBrain()
-	private let filePath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] + "gameBrain.dat"
+	//private let filePath = NSHomeDirectory()+"/Documents/gameBrain.dat"
+	private let filePath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] + "/gameBrain.dat"
     override func viewDidLoad() {
         super.viewDidLoad()
 		

@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
 		//读取数据
-		let filePath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] + "recordTable.dat"
+		let filePath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] + "/recordTable.dat"
 		
 		if let tempRecordTable : RecordTable = NSKeyedUnarchiver.unarchiveObjectWithFile(filePath) as? RecordTable {
 			RecordTable.staticRecordTabel = tempRecordTable
