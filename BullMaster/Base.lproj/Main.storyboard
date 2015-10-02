@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YrG-w7-Jeh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YrG-w7-Jeh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -12,10 +12,12 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="GTK-8S-d5m">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <button key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IoC-x2-BSp">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <state key="normal" title="Back"/>
                             <connections>
@@ -27,11 +29,12 @@
                                 <rect key="frame" x="0.0" y="88" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V8Q-wV-Tgl" id="wmr-wQ-Ae2">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOf-CK-ucM">
                                             <rect key="frame" x="8" y="8" width="526" height="21"/>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="C5A-xE-CDk"/>
                                                 <constraint firstAttribute="width" constant="100" id="u8k-r6-rKC"/>
@@ -47,6 +50,7 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔵00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coW-mY-5LH">
                                             <rect key="frame" x="542" y="40" width="50" height="21"/>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="8f4-YG-gCz"/>
                                                 <constraint firstAttribute="width" constant="50" id="KHQ-gt-8Rq"/>
@@ -57,6 +61,7 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔴00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evz-VL-AZh">
                                             <rect key="frame" x="542" y="8" width="50" height="21"/>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="4dg-Ue-XE6"/>
                                                 <constraint firstAttribute="width" constant="50" id="gUB-IV-vEz"/>
@@ -67,6 +72,7 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsA-di-hym">
                                             <rect key="frame" x="8" y="40" width="526" height="21"/>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="cGg-8d-Zr9"/>
                                                 <constraint firstAttribute="width" constant="300" id="ih4-5R-hDo"/>
@@ -81,6 +87,7 @@
                                             </variation>
                                         </label>
                                     </subviews>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="coW-mY-5LH" secondAttribute="bottom" constant="0.5" id="7kz-OI-Zc1"/>
                                         <constraint firstItem="coW-mY-5LH" firstAttribute="trailing" secondItem="wmr-wQ-Ae2" secondAttribute="trailingMargin" id="BAi-Ij-2ri"/>
@@ -94,6 +101,7 @@
                                         <constraint firstItem="pOf-CK-ucM" firstAttribute="top" secondItem="wmr-wQ-Ae2" secondAttribute="topMargin" id="zZM-KE-8bK"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <animations/>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -122,6 +130,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎯Bull Master" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqA-No-KGP">
                                 <rect key="frame" x="150" y="20" width="300" height="220"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="5JE-Gi-WQy"/>
                                     <constraint firstAttribute="height" constant="220" id="7oS-nB-GTJ"/>
@@ -132,6 +141,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGn-4B-T5i">
                                 <rect key="frame" x="242" y="279" width="116" height="41"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="116" id="dMc-5Y-fsT"/>
                                     <constraint firstAttribute="height" constant="41" id="oIV-le-6RF"/>
@@ -146,6 +156,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KN3-Nh-RDg">
                                 <rect key="frame" x="262" y="328" width="76" height="41"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="qHE-SD-RA1"/>
                                     <constraint firstAttribute="width" constant="76" id="zkz-dK-BDW"/>
@@ -158,6 +169,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bn3-wZ-dag">
                                 <rect key="frame" x="249" y="377" width="102" height="41"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="102" id="1OL-zT-1Px"/>
                                     <constraint firstAttribute="height" constant="41" id="qlN-7A-NlK"/>
@@ -170,6 +182,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFf-1s-j7u">
                                 <rect key="frame" x="268" y="426" width="65" height="41"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="3tD-lh-7OF"/>
                                     <constraint firstAttribute="height" constant="41" id="mzX-31-z83"/>
@@ -181,6 +194,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xFf-1s-j7u" firstAttribute="top" secondItem="Bn3-wZ-dag" secondAttribute="bottom" constant="8" id="ATP-v4-0jI"/>
@@ -214,6 +228,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIW-AS-fbl">
                                 <rect key="frame" x="20" y="28" width="113" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="M7Q-YB-TNn"/>
                                     <constraint firstAttribute="width" constant="113" id="bSy-b7-GGc"/>
@@ -224,6 +239,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5C-s6-EtF">
                                 <rect key="frame" x="20" y="65" width="108" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="aSV-U5-FUy"/>
                                     <constraint firstAttribute="width" constant="108" id="rwv-Ia-d8C"/>
@@ -234,6 +250,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILp-b9-G2j">
                                 <rect key="frame" x="273" y="539" width="54" height="41"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="4tD-ot-N8b"/>
                                     <constraint firstAttribute="width" constant="54" id="8WU-Bj-pjs"/>
@@ -246,6 +263,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apR-oJ-Iu8">
                                 <rect key="frame" x="141" y="28" width="439" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="9bW-jd-Zyx"/>
                                     <constraint firstAttribute="width" constant="222" id="Md8-S0-nKL"/>
@@ -261,6 +279,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLW-iZ-Ur2">
                                 <rect key="frame" x="136" y="65" width="444" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="WMK-IA-Q9V"/>
                                 </constraints>
@@ -270,6 +289,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bulls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zty-zF-e9A">
                                 <rect key="frame" x="20" y="102" width="52" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="52" id="SIn-5k-DZA"/>
                                     <constraint firstAttribute="height" constant="29" id="hBg-1X-PEF"/>
@@ -280,6 +300,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bull Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYl-rC-h5r">
                                 <rect key="frame" x="20" y="139" width="94" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="4eX-ue-J5X"/>
                                     <constraint firstAttribute="width" constant="94" id="odG-a3-GtC"/>
@@ -290,6 +311,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double Bulls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-qQ-zLa">
                                 <rect key="frame" x="20" y="176" width="134" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="6CI-BU-GSz"/>
                                     <constraint firstAttribute="width" constant="134" id="Sbd-ld-U5y"/>
@@ -300,6 +322,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D-Bull Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QG-Xt-aJE">
                                 <rect key="frame" x="20" y="213" width="121" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="5ju-O4-ude"/>
                                     <constraint firstAttribute="width" constant="121" id="d5t-UH-X5E"/>
@@ -310,6 +333,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single Bulls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIC-nt-NHf">
                                 <rect key="frame" x="20" y="250" width="124" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="124" id="I4E-m1-JJJ"/>
                                     <constraint firstAttribute="height" constant="29" id="bCL-zY-59g"/>
@@ -320,6 +344,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S-Bull Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mb-Fb-rpJ">
                                 <rect key="frame" x="20" y="287" width="119" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="Cen-Oc-IgB"/>
                                     <constraint firstAttribute="width" constant="119" id="IJx-TO-bkL"/>
@@ -330,6 +355,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qx-yk-DpR">
                                 <rect key="frame" x="20" y="324" width="142" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="HJy-Rm-QRY"/>
                                     <constraint firstAttribute="width" constant="142" id="ocq-24-moA"/>
@@ -340,6 +366,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Darts Thrown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEH-x7-fwG">
                                 <rect key="frame" x="20" y="361" width="144" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="144" id="uLx-d6-qQM"/>
                                     <constraint firstAttribute="height" constant="29" id="zyS-Y3-9rV"/>
@@ -350,6 +377,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLa-Bq-bvr">
                                 <rect key="frame" x="80" y="102" width="500" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="Ne5-AK-VSo"/>
                                 </constraints>
@@ -359,6 +387,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUt-FK-Nfn">
                                 <rect key="frame" x="122" y="139" width="458" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="FZi-bA-MEU"/>
                                 </constraints>
@@ -368,6 +397,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cte-GD-ocT">
                                 <rect key="frame" x="149" y="213" width="431" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="0yI-Ah-Zko"/>
                                 </constraints>
@@ -377,6 +407,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGG-HQ-hrV">
                                 <rect key="frame" x="152" y="250" width="428" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="Cc7-UE-24k"/>
                                 </constraints>
@@ -386,6 +417,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voj-zJ-tlS">
                                 <rect key="frame" x="147" y="287" width="433" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="nqf-ee-wKB"/>
                                 </constraints>
@@ -395,6 +427,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="533-F4-Xy2">
                                 <rect key="frame" x="170" y="324" width="410" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="fwb-9A-2z4"/>
                                 </constraints>
@@ -404,6 +437,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ff-2U-PYH">
                                 <rect key="frame" x="172" y="361" width="408" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="4Ze-ls-hxU"/>
                                 </constraints>
@@ -413,6 +447,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mri-jr-EHI">
                                 <rect key="frame" x="162" y="176" width="418" height="29"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="9Qh-qm-ztR"/>
                                 </constraints>
@@ -421,6 +456,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Cte-GD-ocT" firstAttribute="trailing" secondItem="dTJ-6c-pVz" secondAttribute="trailingMargin" id="183-Om-H3s"/>
@@ -515,6 +551,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="esi-B1-9hw">
                                 <rect key="frame" x="0.0" y="28" width="600" height="572"/>
+                                <animations/>
                                 <string key="text">Tutorial
 
 You are required to throw 24 times per game (three darts per round, eight rounds in all). If you hit the center of the darts board, it is called a D-Bull, you'll get 50 points. When you hit the ring surrounding the center, it is a S-Bull, 25 points would be added to your score. Other place won't give you any score. When you finish 24 darts, a total score will be shown and the game data will be saved into your record. You can press "Restart" to begin a new game.
@@ -529,6 +566,7 @@ Twitter: cma19891103</string>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuF-2G-YUh">
                                 <rect key="frame" x="273" y="539" width="54" height="41"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="54" id="jYA-Z8-TmO"/>
                                     <constraint firstAttribute="height" constant="41" id="xWQ-Ds-ed8"/>
@@ -540,6 +578,7 @@ Twitter: cma19891103</string>
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="esi-B1-9hw" firstAttribute="bottom" secondItem="hfT-4G-CMd" secondAttribute="top" id="OeV-6f-fct"/>
@@ -570,6 +609,7 @@ Twitter: cma19891103</string>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSr-9I-GXV">
                                 <rect key="frame" x="20" y="28" width="560" height="82"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="QPw-dq-T95"/>
                                 </constraints>
@@ -583,6 +623,7 @@ Twitter: cma19891103</string>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBg-xG-RMG">
                                 <rect key="frame" x="20" y="118" width="560" height="115"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="115" id="r4D-el-tex"/>
                                 </constraints>
@@ -591,7 +632,8 @@ Twitter: cma19891103</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7r-LS-9Sc">
-                                <rect key="frame" x="209.5" y="440" width="181" height="50"/>
+                                <rect key="frame" x="210" y="440" width="181" height="50"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="vCQ-Zu-0yQ"/>
                                 </constraints>
@@ -604,7 +646,8 @@ Twitter: cma19891103</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyM-hU-ZKA">
-                                <rect key="frame" x="398.5" y="440" width="181.5" height="50"/>
+                                <rect key="frame" x="399" y="440" width="182" height="50"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="yKd-XE-2MV"/>
                                 </constraints>
@@ -617,7 +660,8 @@ Twitter: cma19891103</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJ3-y3-mh9">
-                                <rect key="frame" x="20" y="520" width="181.5" height="50"/>
+                                <rect key="frame" x="20" y="520" width="182" height="50"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="uKe-Qq-4pE"/>
                                 </constraints>
@@ -628,7 +672,8 @@ Twitter: cma19891103</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53v-eP-cYt">
-                                <rect key="frame" x="209.5" y="520" width="181" height="50"/>
+                                <rect key="frame" x="210" y="520" width="181" height="50"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="OD3-xy-TvX"/>
                                 </constraints>
@@ -639,7 +684,8 @@ Twitter: cma19891103</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLe-k8-5lJ">
-                                <rect key="frame" x="398.5" y="520" width="181.5" height="50"/>
+                                <rect key="frame" x="399" y="520" width="182" height="50"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="zBU-Np-GbE"/>
                                 </constraints>
@@ -650,7 +696,8 @@ Twitter: cma19891103</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTv-JT-Llq">
-                                <rect key="frame" x="20" y="440" width="181.5" height="50"/>
+                                <rect key="frame" x="20" y="440" width="182" height="50"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="shM-ZD-vPZ"/>
                                 </constraints>
@@ -663,12 +710,13 @@ Twitter: cma19891103</string>
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TJ3-y3-mh9" firstAttribute="width" secondItem="53v-eP-cYt" secondAttribute="width" id="14y-nq-vUN"/>
+                            <constraint firstItem="TJ3-y3-mh9" firstAttribute="width" secondItem="53v-eP-cYt" secondAttribute="width" constant="1" id="14y-nq-vUN"/>
                             <constraint firstItem="TJ3-y3-mh9" firstAttribute="top" secondItem="rTv-JT-Llq" secondAttribute="bottom" constant="30" id="HPP-E8-wvL"/>
                             <constraint firstItem="WLe-k8-5lJ" firstAttribute="leading" secondItem="53v-eP-cYt" secondAttribute="trailing" constant="8" id="HQE-I3-PVs"/>
-                            <constraint firstItem="rTv-JT-Llq" firstAttribute="width" secondItem="n7r-LS-9Sc" secondAttribute="width" id="LAI-Rd-z3r"/>
+                            <constraint firstItem="rTv-JT-Llq" firstAttribute="width" secondItem="n7r-LS-9Sc" secondAttribute="width" constant="1" id="LAI-Rd-z3r"/>
                             <constraint firstItem="cKX-Sg-G4G" firstAttribute="top" secondItem="WLe-k8-5lJ" secondAttribute="bottom" constant="30" id="N5q-kx-1ax"/>
                             <constraint firstItem="cyM-hU-ZKA" firstAttribute="leading" secondItem="n7r-LS-9Sc" secondAttribute="trailing" constant="8" id="Npe-87-g2u"/>
                             <constraint firstItem="cKX-Sg-G4G" firstAttribute="top" secondItem="53v-eP-cYt" secondAttribute="bottom" constant="30" id="O5U-z2-LWQ"/>
@@ -676,22 +724,28 @@ Twitter: cma19891103</string>
                             <constraint firstItem="53v-eP-cYt" firstAttribute="top" secondItem="n7r-LS-9Sc" secondAttribute="bottom" constant="30" id="W9b-ih-SaB"/>
                             <constraint firstItem="TJ3-y3-mh9" firstAttribute="leading" secondItem="iGb-8m-ubL" secondAttribute="leadingMargin" id="W9m-QK-gj3"/>
                             <constraint firstItem="EBg-xG-RMG" firstAttribute="trailing" secondItem="iGb-8m-ubL" secondAttribute="trailingMargin" id="Wmy-jb-QAR"/>
-                            <constraint firstItem="WLe-k8-5lJ" firstAttribute="width" secondItem="53v-eP-cYt" secondAttribute="width" id="XiX-C0-CFh"/>
+                            <constraint firstItem="WLe-k8-5lJ" firstAttribute="width" secondItem="53v-eP-cYt" secondAttribute="width" constant="1" id="XiX-C0-CFh"/>
                             <constraint firstItem="rTv-JT-Llq" firstAttribute="leading" secondItem="iGb-8m-ubL" secondAttribute="leadingMargin" id="bsl-Fn-kWJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WLe-k8-5lJ" secondAttribute="trailing" id="d39-87-gIH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WLe-k8-5lJ" secondAttribute="trailing" constant="-1" id="d39-87-gIH"/>
                             <constraint firstItem="n7r-LS-9Sc" firstAttribute="leading" secondItem="rTv-JT-Llq" secondAttribute="trailing" constant="8" id="gPr-c5-q1A"/>
                             <constraint firstItem="EBg-xG-RMG" firstAttribute="leading" secondItem="iGb-8m-ubL" secondAttribute="leadingMargin" id="gz0-NI-rIN"/>
                             <constraint firstItem="eSr-9I-GXV" firstAttribute="leading" secondItem="iGb-8m-ubL" secondAttribute="leadingMargin" id="itm-2X-zbO"/>
                             <constraint firstItem="eSr-9I-GXV" firstAttribute="trailing" secondItem="iGb-8m-ubL" secondAttribute="trailingMargin" id="mhG-DU-ZgL"/>
                             <constraint firstItem="53v-eP-cYt" firstAttribute="leading" secondItem="TJ3-y3-mh9" secondAttribute="trailing" constant="8" id="p1q-mM-nXc"/>
                             <constraint firstItem="WLe-k8-5lJ" firstAttribute="top" secondItem="cyM-hU-ZKA" secondAttribute="bottom" constant="30" id="pgZ-Jq-dPa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cyM-hU-ZKA" secondAttribute="trailing" id="pw8-KG-5Fh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cyM-hU-ZKA" secondAttribute="trailing" constant="-1" id="pw8-KG-5Fh"/>
                             <constraint firstItem="cKX-Sg-G4G" firstAttribute="top" secondItem="TJ3-y3-mh9" secondAttribute="bottom" constant="30" id="rjc-pU-GjO"/>
-                            <constraint firstItem="cyM-hU-ZKA" firstAttribute="width" secondItem="n7r-LS-9Sc" secondAttribute="width" id="tY7-ya-TkY"/>
+                            <constraint firstItem="cyM-hU-ZKA" firstAttribute="width" secondItem="n7r-LS-9Sc" secondAttribute="width" constant="1" id="tY7-ya-TkY"/>
                             <constraint firstItem="eSr-9I-GXV" firstAttribute="top" secondItem="83t-m1-hNt" secondAttribute="bottom" constant="8" id="v9G-BB-Etw"/>
                             <constraint firstItem="53v-eP-cYt" firstAttribute="centerX" secondItem="iGb-8m-ubL" secondAttribute="centerX" id="yvq-rw-4CY"/>
                             <constraint firstItem="n7r-LS-9Sc" firstAttribute="centerX" secondItem="iGb-8m-ubL" secondAttribute="centerX" id="zXh-1D-3be"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pw8-KG-5Fh"/>
+                                <exclude reference="d39-87-gIH"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="marksLabel" destination="eSr-9I-GXV" id="syP-ox-UpQ"/>
